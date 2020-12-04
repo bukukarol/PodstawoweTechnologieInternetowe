@@ -1,0 +1,40 @@
+﻿@page
+@model PodstawoweTechnologieInternetowe.Pages.CSS.NavigateDOMTreeModel
+@{
+    ViewData["Title"] = "NavigateDOMTree";
+}
+<input type="hidden"/>
+<div class="hidden">
+    DOM, dom, DoM,DOOM,doM
+</div>
+<h3>Nawiguj po drzewie DOM</h3>
+
+<ul>
+    <li><b>Inspect Mode</b>
+        <ul>
+            <li>Pokazuje podstawowe informacje o elemencie</li>
+        </ul>
+    </li>
+    <li>
+        <b>Filter drzewa DOM</b>
+        <ol>
+            <li>Daj fokus na okno <b>Elements</b></li>
+            <li>Crtl + F / Command + F (Mac)</li>
+            <li>Szukaj po tekście, selectorach CSS, lub po "XPath"
+            <ul>
+                <li>po tekście: DOM</li>
+                <li>po selectorze: input[type="hidden"]</li>
+                <li>po XPath: //ul/li</li>
+            </ul>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <b>Console -> inspect(element)</b>
+        <ul>
+            <li>inspect(document.querySelector('input'))</li>
+        </ul>
+    </li>
+</ul>
+
+<p>W zależności od sytuacji warto znać różne sposoby dotarcia do naszego obiektu.</p>

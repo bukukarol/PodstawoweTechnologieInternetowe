@@ -1,0 +1,41 @@
+﻿@page
+@model PodstawoweTechnologieInternetowe.Pages.JavaScript.SourcePanelModel
+@{
+    ViewData["Title"] = "SourcePanel";
+}
+
+<h3>Debugging przy użyciu panelu Source</h3>
+
+<ol>
+    <li>
+        Jak zacząć debugowanie? - <b>debbugger;</b>
+        <ul>
+            <li>Można też wyklikać </li>
+        </ul>
+    </li>
+    <li>Pretty print jeśli debugujemy na plikach .min.js</li>
+
+    <li>Podstawowe operacje wykonywania kodu
+        <ul>
+            <li>Step over etc.</li>
+            <li>Never pause here (debbugger killer)</li>
+            <li>Code folding</li>
+        </ul>
+    </li>
+
+    <li>
+        Pilnowanie wartości wykonywanego kodu
+        <ul>
+            <li>Wykonane linijki kodu pokazują wartości zmiennnych</li>
+            <li><b>Scope</b> pane</li>
+            <li>Consola -> możemy w locie sprawdzać wartości zmiennych</li>
+            <li>Consola możemy tutaj prototypować kod który chcemy dodać do projektu</li>
+            <li>Live Expressions</li>
+            <li>Logpoints</li>
+        </ul>
+    </li>
+    
+</ol>
+
+<button class="btn-info" onclick="RandomColorForHeader()">Zmień kolor nagłówka</button>
+

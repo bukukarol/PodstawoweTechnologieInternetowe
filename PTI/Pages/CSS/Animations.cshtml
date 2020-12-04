@@ -1,0 +1,40 @@
+﻿@page
+@model PodstawoweTechnologieInternetowe.Pages.CSS.AnimationsModel
+@{
+    ViewData["Title"] = "Animations";
+}
+
+<h3>Animations</h3>
+
+<ul>
+    <li>
+        Command menu (Ctrl + SHIFT + P) -> Type <b>Animations</b>
+        <ul>
+            <li>Zmień szybkość animacji</li>
+            <li>Pociągnij za tło żeby dodać opóźnienie</li>
+            <li>Pociągnij za kółka aby dodać klatek</li>
+            <li>Kliknij aby zobaczyć element w drzewie DOM</li>
+        </ul>
+    </li>
+    <li>
+        Command menu (Ctrl + SHIFT + P) -> Type <b>Rendering</b>
+        <ul>
+            <li>Paint Flashing</li>
+            <li><a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">High performence Animations</a></li>
+
+        </ul>
+    </li>
+</ul>
+<button class="btn-danger" onclick="Animate()">Animate</button>
+<button class="btn-danger" onclick="StopAnimation()">Stop</button>
+<div id="raceTrack">
+    <div class="track">
+        <a class="animateElement moveFast off"><img src="~/img/aircraft.png" /></a>
+    </div>
+    <div class="track">
+        <a id="carHolder" class="animateElement moveSlow off"><img src="~/img/car.png" /></a>
+    </div>
+</div>
+
+
+
